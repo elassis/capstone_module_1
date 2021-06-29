@@ -9,7 +9,10 @@ body {
 nav{
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
+}
+footer{
+    display: none;
 }
 
 .logo{
@@ -17,16 +20,23 @@ nav{
     width: 90%;
 }
 
-.navbar{
+.navbar >  li{
     display: none;
     width: 40%;
+}
+ul.navbar{
+    padding: 0;
+}
+
+.navbar>li:nth-child(2){
+    color:#ec4252;
 }
 
 .fa-bars{
     width:100%;
     padding: 20px 0;
     font-weight: bolder;
-    font-size: 26px;
+    font-size: 36px;
     color:#272a31;
 }
 
@@ -112,7 +122,7 @@ hr{
 ul.services-wrapper{
     padding: 0;
     display: flex;
-    height: 320px;
+    height: 530px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -306,7 +316,6 @@ p.name{
     text-align: center;
     font-family: 'lato';
     text-transform: capitalize;
-    background-color: #ec4252;
     padding: 20px;
     color: #fff;
 }
@@ -315,4 +324,286 @@ p.name{
     font-weight: bold;
     margin-bottom: 0%;
 }
+
+.value-1{
+    background-image:linear-gradient(to bottom, rgba(236, 66, 82, 0.80), rgba(236, 66, 82, 0.80)),
+    url('images/mission.jpeg');
+    background-size: cover;
+}
+.value-2{
+    background-image:linear-gradient(to bottom, rgba(236, 66, 82, 0.70), rgba(236, 66, 82, 0.70)),
+    url('images/vission.jpg');
+    background-size: cover;
+}
+.value-3{
+    background-image:linear-gradient(to bottom, rgba(236, 66, 82, 0.70), rgba(236, 66, 82, 0.70)),
+    url('images/values.jpg');
+    background-size: cover;
+}
+/*about footer code*/
+.footer-about{
+    display: flex;
+    background-color: #272a31;
+    padding: 30px 10px;
+    font-family: lato,sans-serif;
+}
+ul.footer-wrapper{
+    padding:0 20px;
+    margin:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-1{
+ width: 50%;
+}
+
+.item-2{
+    width:50%;
+}
+
+.footer-logo{
+    color:#d3d3d3;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.second-part{
+    display: none;
+}
+
+.footer-text{
+    color:#d3d3d3;
+    font-size: 10px;
+}
+.text-2{
+    font-size: 12px;
+}
+/*popup-menu code*/
+
+.popup-menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #272a31;
+    margin-top: -108px;
+    padding: 20px 30px;
+}
+.popup-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+
+}
+.popup-item{
+    width: 100%;
+    padding: 20px 10px;
+    
+}
+.popup-item > a {
+    color: #ec4252;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'lato',sans-serif;
+    text-transform: capitalize;
+}
+
+.popup-item >button{
+    display: block;
+    margin-left: 70%;
+    background-color: #272a31;
+    color: #ded3d4;
+    font-size: 20px;
+    border: none;
+}
+.display{
+    display: none;
+}
+
+@media (min-width:1100px) {
+    nav{
+        margin:0;
+        padding: 10px 80px;
+        display: flex;
+        -webkit-box-shadow: 0px 1px 15px -1px rgba(141, 135, 135, 0.75);
+-moz-box-shadow: 0px 1px 15px -1px rgba(141, 135, 135, 0.75);
+box-shadow: 0px 1px 15px -1px rgba(141, 135, 135, 0.75);
+    }
+    .navbar{
+        display: flex;
+        width: 20%;
+        justify-content: space-evenly;
+        font-family: lato,sans-serif;
+        text-transform: capitalize;
+    }
+    .logo{
+        display: block;
+        width: 80%;
+    }
+    
+    .navbar > i{
+        display: none;
+    }
+    .navbar >li{
+        display: block;
+    }
+
+    .navbar > li > a,.logo > a{
+        text-decoration: none;
+        color:#272a31;
+    }
+    .navbar > li:nth-child(2) > a{
+        color:#ec4252;
+    }
+
+    
+
+    header {
+      
+        padding: 40px 80px 40px 80px;
+        
+    }
+
+    .first-text{
+       
+        font-size: 35px;
+        
+    }
+    .second-text {
+        
+        margin-top: 15px;
+        font-size: 60px;
+        line-height: 75px;
+        width: 75%;
+        
+    }
+    .paragraph{
+        width: 66%;
+    }
+
+    ul.services-wrapper {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        height: 225px;
+    }
+    hr {
+        margin-bottom: 45px;
+    }
+    .services-item {
+        width: 19%;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    
+    }
+    .service-title {
+        width: 60%;
+        margin:0;
+    }
+
+    .service-text {
+        width: 80%;
+        
+    }
+    .service-btn {
+       text-decoration: underline;
+       text-transform: uppercase;
+       background-color: #272a31;
+    }
+
+    .testimonials-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 76%;
+        height: 330px;
+        margin: auto;
+    
+    }
+    .testimonial-item {
+        width: 50%;
+       
+    }
+    .separator-testimonials {
+        margin-bottom: 60px;
+    }
+    .btn-testimonials{
+        display: none;
+    }
+
+    footer{
+        display: block;
+        padding: 33px 138px;
+        
+    }
+    ul.footer-wrapper{
+        justify-content: space-between;
+    }
+
+    .item-1{
+        width: 30%;
+    }
+    .item-2{
+        width: 70%;
+    }
+    .footer-text{
+        font-size: 10px;
+    }
+    .text-2{
+        font-size: 16px;
+    }
+    /*About coding*/
+
+    .about-header{
+        align-items: center;
+        padding:80px 40px;
+    }
+
+    .about-logo{
+        width: 45%;
+    }
+
+    .values{
+        padding: 50px 40px 60px 40px;
+    }
+    .values-description{
+        width: 50%;
+    text-align: center;
+    margin: auto;
+    }
+    .values-title{
+        font-weight: 600;
+    }
+
+    .values-wrapper{
+        display: flex;
+        flex-direction: row;
+        height: 170px;
+        justify-content: space-evenly;
+    
+    }
+    footer{
+        display: flex;
+        background-color: #272a31;
+        padding: 35px 130px;
+        font-family: lato,sans-serif;
+    }
+
+    .footer-about {
+        display: block;
+        padding: 35px 138px;
+    }
+    .second-part{
+        display: block;
+    }
+}   
 

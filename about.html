@@ -10,45 +10,62 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><p>My Logo</p></div>
+        <div class="logo"><a href="index.html">My Logo</a></div>
         <ul class="navbar">
-            <li class="nav-items">Inicio</li>
-            <li class="nav-items">Sobre Nosotros</li>   
+            <li class="nav-items"><a href="index.html">home</a></li>
+            <li class="nav-items"><a href="about.html">about</a></li>
+            <i class="fas fa-bars" onclick="displayMenu()"></i>   
         </ul>
-        <i><i class="fas fa-bars"></i></i> 
+        
     </nav>
-    <header>
+    <div id='popup'></div>
+    <header class="about-header">
         <h5 class="first-text about-f-text">"Hello!, there"</h5>
         <h1 class="second-text about-s-text">about us</h1>
-        <p class="paragraph about-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-           Perferendis ipsum soluta facere, consequatur.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-           Perferendis ipsum soluta facere, consequatur
+        <p class="paragraph about-p">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Cum vel deleniti asperiores quam praesentium alias nesciunt rerum aliquam, 
+            incidunt non natus iusto itaque temporibus totam, 
+            ipsa veniam perspiciatis ullam numquam.
         </p>
         <div class="about-logo">my logo</div>
     </header>
     <section class="values">
-        <p class="values-title">who are we ?</p>
+        <p class="values-title">What Drives us ?</p>
         <hr>
         <p class="values-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Vitae iusto minus sunt fugiat nesciunt assumenda ea necessitatibus ipsum? Magnam eum incidunt 
             ex blanditiis esse nostrum quidem quibusdam numquam dolor cum!
         </p>
         <ul class="values-wrapper">
-            <li class="values-items">
+            <li class="values-items value-1">
                 <p class="value-title">mission</p>
-                <p class="values-text">click to see know our mission</p>
+                <p class="values-text">click to know our mission</p>
             </li>
-            <li class="values-items">
+            <li class="values-items value-2">
                 <p class="value-title">vission</p>
-                <p class="values-text">click to see know our vission</p>
+                <p class="values-text">click to know our vission</p>
             </li>
-            <li class="values-items">
+            <li class="values-items value-3">
                 <p class="value-title">values</p>
-                <p class="values-text">click to see know our values</p>
+                <p class="values-text">click to know our values</p>
             </li>
         </ul>
     </section>
+    <footer class="footer-about">
+        <ul class="footer-wrapper">
+            <li class="footer-item item-1">
+                <p class="footer-logo">My Logo</p>
+            </li>
+            <li class="footer-item item-2"> 
+                <p class="footer-text">2021 Alrights Reserved</p>
+                <p class="footer-text text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     <span class="second-part">Quos debitis atque voluptatum laboriosam illo mollitia.</span>
+                </p>
+            </li>
+        </ul>
+    </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

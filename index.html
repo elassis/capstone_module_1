@@ -11,17 +11,20 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><p>My Logo</p></div>
+        <div class="logo"><a href="index.html">My Logo</a></div>
         <ul class="navbar">
-            <li class="nav-items">Inicio</li>
-            <li class="nav-items">Sobre Nosotros</li>   
+            <li class="nav-items"><a href="index.html">home</a></li>
+            <li class="nav-items"><a href="about.html">about</a></li>
+            <i class="fas fa-bars" onclick="displayMenu()"></i>   
         </ul>
-        <i><i class="fas fa-bars"></i></i> 
+        
     </nav>
+    <div id='popup'></div>
     <header>
         <h5 class="first-text">"Hello! Sharing World"</h5>
         <h1 class="second-text">CREATIVE COMMONS GLOBAL SUBMIT</h1>
         <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+           Perferendis ipsum soluta facere, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
            Perferendis ipsum soluta facere, consequatur
         </p>
     </header>
@@ -53,11 +56,27 @@
                 doloribus sint!
               </p>
             </li>
+            <li class="services-item">
+                <i class="service-icon fas fa-file-alt"></i>
+              <p class="service-title">payments reports</p>              
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                doloribus sint!
+              </p>
+            </li>
+            <li class="services-item">
+                <i class="service-icon fas fa-file-alt"></i>
+              <p class="service-title">payments reports</p>              
+              <p class="service-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                doloribus sint!
+              </p>
+            </li>
         </ul>
         <button class="service-btn">more info</button>
     </section>
     <section class="testimonials">
-        <h2 class="testimonials-title">services</h2>
+        <h2 class="testimonials-title">testimonials</h2>
         <hr class="separator-testimonials">
         <ul class="testimonials-wrapper">
             <li class="testimonial-item">
@@ -119,6 +138,19 @@
         </ul>
         <button class="btn-testimonials">more <span>></span></button>
     </section>
+    <footer>
+        <ul class="footer-wrapper">
+            <li class="footer-item item-1">
+                <p class="footer-logo">My Logo</p>
+            </li>
+            <li class="footer-item item-2"> 
+                <p class="footer-text">2021 Alrights Reserved</p>
+                <p class="footer-text text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     <span class="second-part">Quos debitis atque voluptatum laboriosam illo mollitia. </span>
+                </p>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 <script src="script.js"></script>
