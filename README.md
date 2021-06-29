@@ -11,6 +11,9 @@
 * CSS
 * Javascript
 
+# Design Credits to :
+* Cindy Shin.
+
 # Built By 🙏:
 
 - @elassis
