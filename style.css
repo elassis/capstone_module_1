@@ -8,10 +8,16 @@ body {
   list-style-type: none;
 }
 
+.top-bar,
+.partners {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  height: 10vh;
 }
 
 footer {
@@ -21,6 +27,13 @@ footer {
 .logo {
   display: none;
   width: 90%;
+}
+
+.logo > a {
+  color: #ec4252;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar > li {
@@ -65,13 +78,13 @@ ul.navbar {
 header {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 20px 10px 0 10px;
   height: 70vh;
-  background-color: transparent;
-  background-image: url('images/money.jpg');
+  background-image:
+    linear-gradient(to bottom, rgba(240, 229, 230, 0.8), rgba(238, 231, 232, 0.8)),
+    url('images/header-background.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .first-text {
@@ -86,8 +99,9 @@ header {
 .second-text {
   font-family: cocogoose-2, sans-serif;
   font-weight: 100;
-  color: #ec534288;
+  color: #ec5242;
   margin-bottom: -10px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
@@ -302,6 +316,10 @@ p.name {
   text-align: center;
 }
 
+#about-header {
+  height: 95vh;
+}
+
 .about-s-text {
   text-transform: uppercase;
   color: #ec4252;
@@ -319,12 +337,14 @@ p.name {
   border: 1px solid #e3e3e3;
 }
 
-.about-p {
+p.about-p {
   font-size: 13px;
+  background-color: #fff;
+  padding: 20px;
+  width: 87%;
 }
 
 .values {
-  border-top: 1px solid #e3e3e3;
   margin-top: 30px;
   padding: 0 10px;
 }
@@ -393,7 +413,7 @@ p.name {
 /* about footer code */
 .footer-about {
   display: flex;
-  background-color: #272a31;
+  background-color: #fff;
   padding: 30px 10px;
   font-family: lato, sans-serif;
 }
@@ -416,7 +436,7 @@ ul.footer-wrapper {
 }
 
 .footer-logo {
-  color: #d3d3d3;
+  color: #000;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -427,7 +447,7 @@ ul.footer-wrapper {
 }
 
 .footer-text {
-  color: #d3d3d3;
+  color: #000;
   font-size: 10px;
 }
 
@@ -442,7 +462,7 @@ ul.footer-wrapper {
   width: 100vw;
   height: 100vh;
   background-color: #272a31;
-  margin-top: -108px;
+  margin-top: -80px;
   padding: 20px 30px;
 }
 
@@ -482,7 +502,83 @@ ul.footer-wrapper {
   display: none;
 }
 
+/* partner code */
+.partners {
+  background-color: #272a31;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.partner-title {
+  color: rgb(230, 221, 221);
+}
+
+.partner-wrapper {
+  color: grey;
+  padding: 0;
+  width: 84%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.mozilla,
+.google,
+.naver,
+.daum,
+.airbnb {
+  font-family: lato, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.google {
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+.naver {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+hr.sep-partner {
+  margin-bottom: 13px;
+}
+
+.about-partners {
+  display: block;
+}
+
 @media (min-width: 1100px) {
+  .top-bar {
+    display: flex;
+    height: 30px;
+    background-color: #272a31;
+    color: #fff;
+    justify-content: flex-end;
+    padding: 0 146px;
+    align-items: center;
+  }
+
+  ul.top-bar-items {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    padding: 0;
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+
+  .top-bar-icon > a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   nav {
     margin: 0;
     padding: 10px 80px;
@@ -513,7 +609,6 @@ ul.footer-wrapper {
     display: block;
   }
 
-  .logo > a,
   .navbar > li > a {
     text-decoration: none;
     color: #272a31;
@@ -524,17 +619,19 @@ ul.footer-wrapper {
   }
 
   header {
+    height: 90vh;
     padding: 40px 80px 40px 80px;
   }
 
   .first-text {
     font-size: 35px;
+    line-height: 50px;
   }
 
   .second-text {
     margin-top: 15px;
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 90px;
+    line-height: 95px;
     width: 75%;
   }
 
@@ -599,10 +696,20 @@ ul.footer-wrapper {
     display: none;
   }
 
+  .partners {
+    display: block;
+  }
 
+  .about-partners {
+    display: none;
+  }
 
   ul.footer-wrapper {
     justify-content: space-between;
+  }
+
+  .about-f-logo {
+    color: #d3d3d3;
   }
 
   .item-1 {
@@ -611,6 +718,7 @@ ul.footer-wrapper {
 
   .item-2 {
     width: 70%;
+    color: #bdb2b2;
   }
 
   .footer-text {
@@ -623,7 +731,7 @@ ul.footer-wrapper {
 
   /* About coding */
 
-  .about-header {
+  header.about-header {
     align-items: center;
     padding: 80px 40px 60px 40px;
   }
@@ -635,6 +743,10 @@ ul.footer-wrapper {
 
   .values {
     padding: 50px 40px 60px 40px;
+  }
+
+  p.about-p {
+    width: 45%;
   }
 
   .values-description {
@@ -656,14 +768,21 @@ ul.footer-wrapper {
 
   footer {
     display: flex;
-    background-color: #272a31;
+    background-color: #fff;
     font-family: lato, sans-serif;
     padding: 33px 138px;
+  }
+
+  .about-footer-text,
+  .about-footer-text-2 {
+    color: #d3d3d3;
   }
 
   .footer-about {
     display: block;
     padding: 35px 200px;
+    background-color: #272a31;
+    color: #bdb2b2;
   }
 
   .second-part {
