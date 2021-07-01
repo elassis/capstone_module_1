@@ -10,6 +10,9 @@
 # Video description
  https://www.loom.com/share/2571ae5e5e124fc1baff0c27aee63037
  
+ # Screenshots
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/index-top.jpg "index top")
+ 
 # Built With ⚒️:
 * HTML
 * CSS
