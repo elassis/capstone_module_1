@@ -12,6 +12,12 @@
  
  # Screenshots
  ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/index-top.jpg "index top")
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/services.jpg "index-services")
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/testimonials.jpg "index-testimonials")
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/index-footer.jpg "index-footer")
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/about-top.jpg "about top")
+ ![Alt text](https://github.com/elassis/capstone_module_1/blob/home_about_branch/screenshoots-01072021/about-values-footer.jpg "about-rest")
+ 
  
 # Built With ⚒️:
 * HTML
